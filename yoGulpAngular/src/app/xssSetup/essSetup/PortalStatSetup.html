@@ -1,0 +1,21 @@
+<div class="container">
+  <div>
+    <acme-navbar creation-date="main.creationDate"></acme-navbar>
+  </div>
+
+  <div class="jumbotron">
+    <h1 ng-bind="EssPortalStatSetup.simpleMessage"></h1>
+    <div class="form-group">
+        <button class="btn btn-default" ng-click="EssPortalStatSetup.testPortalStatClick()">Check Portal Stat</button>
+    </div>
+    <div class="row" ng-repeat="single in EssPortalStatSetup.portalStatResult">
+      <div class="col-md-3">{{single.viewName}}</div>
+      <div class="col-md-3">{{single.status}}</div>
+      <div class="col-md-3">{{single.statusDescription}}</div>
+    </div>
+
+  </div>
+
+
+</div>
+<span us-spinner spinner-key="spinner-1"></span>

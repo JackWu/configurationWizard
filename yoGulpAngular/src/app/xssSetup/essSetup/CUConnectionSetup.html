@@ -1,0 +1,31 @@
+<div class="container">
+  <div>
+    <acme-navbar creation-date="main.creationDate"></acme-navbar>
+  </div>
+
+  <div class="jumbotron">
+    <h1>CU Connection Setup</h1>
+      <div class="form-group">
+            <label class="pull-left">URL:</label>
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssCUConnectionSetup.url" value="{{EssCUConnectionSetup.url}}">
+      </div>
+      <div class="form-group">
+            <label class="pull-left">Username:</label>
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssCUConnectionSetup.user" value="{{EssCUConnectionSetup.user}}">
+      </div>
+      <div class="form-group">
+            <label class="pull-left">Password:</label>
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssCUConnectionSetup.password" value="{{EssCUConnectionSetup.password}}">
+      </div>
+      <div class="form-group">
+          <button class="btn btn-default" ng-click="EssCUConnectionSetup.testCUConnectionClick()">Test Connection</button>
+          <button class="btn btn-default" ng-click="EssCUConnectionSetup.saveCUPropertiesClick()">Save</button>
+      </div>
+      <div class="form-group">
+            <div class="col3-md">Result: {{EssCUConnectionSetup.result.status}}</div>
+            <div class="col3-md">Message: {{EssCUConnectionSetup.result.message}}</div>
+      </div>
+  </div>
+
+</div>
+<span us-spinner spinner-key="spinner-1"></span>
