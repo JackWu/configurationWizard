@@ -5,6 +5,14 @@
 
   <div class="jumbotron">
     <span ng-bind="EssSetupStarter.simpleMessage"></span>
+    <div class="form-group">
+          <label class="pull-left">ESS Application Properties Path</label>
+          <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssSetupStarter.essApp" value="{{EssSetupStarter.essApp}}">
+    </div>
+    <div class="form-group">
+        <button class="btn btn-default" ng-click="EssSetupStarter.updateEssAppPath()">Update</button>
+    </div>
+
 
 
     <div class="row"><div class="col-md-3 col-md-offset-4"><a ui-sref="essSetupSummary">ESS Setup Summary</a></div></div>

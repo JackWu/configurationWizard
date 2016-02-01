@@ -6,8 +6,8 @@
     .run(runBlock);
 
   /** @ngInject */
-  function runBlock($log,$rootScope) {
-    $rootScope.simpleMessage="This is a global Message";
+  function runBlock($log) {
+
     $log.debug('runBlock end');
   }
 

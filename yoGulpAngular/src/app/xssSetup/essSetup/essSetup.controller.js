@@ -14,24 +14,31 @@
 
 
   /** @ngInject */
-  function EssSetupStarterController(xssSetupEngine,$log, $rootScope) {
+  function EssSetupStarterController(xssSetupEngine,$log, FilePath, toastr) {
     var vm = this;
 
     //vm.simpleMessage = "This is ESS Setup Starter Page!";
-    vm.simpleMessage = $rootScope.simpleMessage;
-    $rootScope.simpleMessage='Now I changed the global message';
+
+    vm.app = FilePath.app;
+    vm.dataaccess = FilePath.dataaccess;
+    vm.essApp = FilePath.essApp;
+
     xssSetupEngine.testRequest().get(function(data){
       $log.debug(data);
     });
-    //$log.info(xssSetupEngine.getPayCheck());
+
+    vm.updateEssAppPath = function(){
+      FilePath.essApp = vm.essApp;
+      toastr.success("Updated ESS Application Properties.");
+    }
 
   }
 
-  function EssHRConnectionSetupController($rootScope, essHRConnectionService){
+  function EssHRConnectionSetupController(essHRConnectionService){
     var vm = this;
 
     //vm.simpleMessage = "This is ESS HR Connection Setup Page!";
-    vm.simpleMessage = $rootScope.simpleMessage;
+
 
     essHRConnectionService.essHRConnectionInitalization(vm);
     vm.testHRConnectionClick = function(){
@@ -55,7 +62,6 @@
      var vm = this;
 
 
-
     //vm.simpleMessage = "This is ESS CU Connection Setup Page!";
     essCUConnectionService.essCUConnectionInitalization(vm);
 
@@ -72,7 +78,6 @@
   function EssCognosSetupController(essCognosSetupService){
     var vm = this;
 
-    vm.simpleMessage = "This is ESS Cognos Setup Page!";
 
     essCognosSetupService.essCognosSetupInitalization(vm);
 
@@ -90,21 +95,17 @@
   function EssSetupSummaryController(){
     var vm = this;
 
-    vm.simpleMessage = "This is ESS Summary Page!";
   }
 
   function EssMiscSetupController(){
     var vm = this;
 
-    vm.simpleMessage = "This is ESS Misc  Setup Page!";
   }
 
   function EssPortalStatSetupController(essPortalStatSetupService){
 
 
     var vm = this;
-
-    vm.simpleMessage = "This is ESS PortalStat Setup Page!";
 
     vm.testPortalStatClick = function(){
 
@@ -115,7 +116,6 @@
 
   function EssTimeEntrySetupController(){
     var vm = this;
-    vm.simpleMessage='This is Time Entry Setup Page!';
   }
 
 

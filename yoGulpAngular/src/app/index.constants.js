@@ -7,7 +7,7 @@
     .constant('malarkey', malarkey)
     .constant('moment', moment)
     .constant('ApiEndPoint', {url:'http://localhost:8080'})
-    .constant('FilePath',{
+    .value('FilePath',{
       app:"C:\\prj\\webInquiry771\\coreRelease\\src\\main\\resources\\spring\\application.properties",
       dataaccess:'C:\\prj\\webInquiry771\\coreRelease\\src\\main\\resources\\spring\\dataAccess.properties',
       essApp:"C:\\prj\\ESSReskin\\src\\main\\webapp\\conf\\application.properties"});
