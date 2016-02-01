@@ -5,104 +5,110 @@
 
 
 
-  <div class="jumbotron text-center">
+  <div class="jumbotron">
     <h1>Cognos Connection Setup</h1>
     <div class="form-group">
           <label class="pull-left">Report Server Type:</label>
-          <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" required="" value="{{EssCognosSetup.ReportServerType}}">
+          <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssCognosSetup.ReportServerType" value="{{EssCognosSetup.ReportServerType}}">
     </div>
       <div class="form-group">
             <label class="pull-left">Cognos Report Server Name:</label>
-            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" required="" value="{{EssCognosSetup.CognosReportServerName}}">
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssCognosSetup.CognosReportServerName" value="{{EssCognosSetup.CognosReportServerName}}">
       </div>
       <div class="form-group">
             <label class="pull-left">Cognos Report Server Port:</label>
-            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" required="" value="{{EssCognosSetup.CognosReportServerPort}}">
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssCognosSetup.CognosReportServerPort" value="{{EssCognosSetup.CognosReportServerPort}}">
       </div>
       <div class="form-group">
             <label class="pull-left">Cognos AnonymousAccessAllowed:</label>
-            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" required="" value="{{EssCognosSetup.CognosAnonymousAccessAllowed}}">
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssCognosSetup.CognosAnonymousAccessAllowed" value="{{EssCognosSetup.CognosAnonymousAccessAllowed}}">
       </div>
       <div class="form-group">
             <label class="pull-left">Cognos Default User Allowed:</label>
-            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" required="" value="{{EssCognosSetup.CognosDefaultUserAllowed}}">
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssCognosSetup.CognosDefaultUserAllowed" value="{{EssCognosSetup.CognosDefaultUserAllowed}}">
       </div>
       <div class="form-group">
             <label class="pull-left">Cognos Default User Name:</label>
-            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" required="" value="{{EssCognosSetup.CognosDefaultUserName}}">
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssCognosSetup.CognosDefaultUserName" value="{{EssCognosSetup.CognosDefaultUserName}}">
       </div>
       <div class="form-group">
             <label class="pull-left">Cognos Default User Password:</label>
-            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" required="" value="{{EssCognosSetup.CognosDefaultUserPassword}}">
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssCognosSetup.CognosDefaultUserPassword" value="{{EssCognosSetup.CognosDefaultUserPassword}}">
       </div>
       <div class="form-group">
             <label class="pull-left">Cognos Default User Namespace:</label>
-            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" required="" value="{{EssCognosSetup.CognosDefaultUserNamespace}}">
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssCognosSetup.CognosDefaultUserNamespace" value="{{EssCognosSetup.CognosDefaultUserNamespace}}">
       </div>
       <div class="form-group">
             <label class="pull-left">Cognos Primary Wait Threshold:</label>
-            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" required="" value="{{EssCognosSetup.CognosPrimaryWaitThreshold}}">
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssCognosSetup.CognosPrimaryWaitThreshold" value="{{EssCognosSetup.CognosPrimaryWaitThreshold}}">
       </div>
       <div class="form-group">
             <label class="pull-left">Cognos Secondary Wait Threshold:</label>
-            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" required="" value="{{EssCognosSetup.CognosSecondaryWaitThreshold}}">
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssCognosSetup.CognosSecondaryWaitThreshold" value="{{EssCognosSetup.CognosSecondaryWaitThreshold}}">
       </div>
       <div class="form-group">
             <label class="pull-left">Cognos Report Path Check Stub:</label>
-            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" required="" value="{{EssCognosSetup.CognosReportPathCheckStub}}">
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssCognosSetup.CognosReportPathCheckStub" value="{{EssCognosSetup.CognosReportPathCheckStub}}">
       </div>
       <div class="form-group">
             <label class="pull-left">Cognos Bill Date Parm Name:</label>
-            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" required="" value="{{EssCognosSetup.CognosBillDateParmName}}">
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssCognosSetup.CognosBillDateParmName" value="{{EssCognosSetup.CognosBillDateParmName}}">
       </div>
       <div class="form-group">
             <label class="pull-left">Cognos Bill Time Parm Name:</label>
-            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" required="" value="{{EssCognosSetup.CognosBillTimeParmName}}">
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssCognosSetup.CognosBillTimeParmName" value="{{EssCognosSetup.CognosBillTimeParmName}}">
       </div>
       <div class="form-group">
             <label class="pull-left">Cognos Bill From Seq Parm Name:</label>
-            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" required="" value="{{EssCognosSetup.CognosBillFromSeqParmName}}">
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssCognosSetup.CognosBillFromSeqParmName" value="{{EssCognosSetup.CognosBillFromSeqParmName}}">
       </div>
       <div class="form-group">
             <label class="pull-left">Cognos Bill To Seq Parm Name:</label>
-            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" required="" value="{{EssCognosSetup.CognosBillToSeqParmName}}">
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssCognosSetup.CognosBillToSeqParmName" value="{{EssCognosSetup.CognosBillToSeqParmName}}">
       </div>
       <div class="form-group">
             <label class="pull-left">Cognos Account No Parm Name:</label>
-            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" required="" value="{{EssCognosSetup.CognosAccountNoParmName}}">
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssCognosSetup.CognosAccountNoParmName" value="{{EssCognosSetup.CognosAccountNoParmName}}">
       </div>
       <div class="form-group">
             <label class="pull-left">Cognos Report Priority:</label>
-            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" required="" value="{{EssCognosSetup.CognosReportPriority}}">
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssCognosSetup.CognosReportPriority" value="{{EssCognosSetup.CognosReportPriority}}">
       </div>
       <div class="form-group">
             <label class="pull-left">Cognos Ds Name:</label>
-            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" required="" value="{{EssCognosSetup.CognosDsName}}">
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssCognosSetup.CognosDsName" value="{{EssCognosSetup.CognosDsName}}">
       </div>
       <div class="form-group">
             <label class="pull-left">Cognos Ds Conn:</label>
-            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" required="" value="{{EssCognosSetup.CognosDsConn}}">
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssCognosSetup.CognosDsConn" value="{{EssCognosSetup.CognosDsConn}}">
       </div>
       <div class="form-group">
             <label class="pull-left">Cognos Ds User:</label>
-            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" required="" value="{{EssCognosSetup.CognosDsUser}}">
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssCognosSetup.CognosDsUser" value="{{EssCognosSetup.CognosDsUser}}">
       </div>
       <div class="form-group">
             <label class="pull-left">Cognos Ds Pwd:</label>
-            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" required="" value="{{EssCognosSetup.CognosDsPwd}}">
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssCognosSetup.CognosDsPwd" value="{{EssCognosSetup.CognosDsPwd}}">
       </div>
       <div class="form-group">
             <label class="pull-left">Cognos Syuser:</label>
-            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" required="" value="{{EssCognosSetup.CognosSyuser}}">
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssCognosSetup.CognosSyuser" value="{{EssCognosSetup.CognosSyuser}}">
       </div>
       <div class="form-group">
             <label class="pull-left">Cognos W2 Report Path:</label>
-            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" required="" value="{{EssCognosSetup.CognosW2ReportPath}}">
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssCognosSetup.CognosW2ReportPath" value="{{EssCognosSetup.CognosW2ReportPath}}">
       </div>
       <div class="form-group">
             <label class="pull-left">Cognos Benefit Report Path:</label>
-            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" required="" value="{{EssCognosSetup.CognosBenefitReportPath}}">
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssCognosSetup.CognosBenefitReportPath" value="{{EssCognosSetup.CognosBenefitReportPath}}">
+      </div>
+
+      <div class="form-group">
+          <button class="btn btn-default" ng-click="EssCognosSetup.testCognosReportClick()">Test Payroll Connection</button>
+          <button class="btn btn-default" ng-click="EssCognosSetup.essCognosSavePropertiesClick()">Save</button>
       </div>
   </div>
 
 </div>
+<span us-spinner spinner-key="spinner-1"></span>

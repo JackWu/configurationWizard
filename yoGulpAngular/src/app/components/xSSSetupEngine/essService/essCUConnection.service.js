@@ -17,7 +17,8 @@
             var requestData = {
               filePath : FilePath.essApp,
               keys : ['PortalStatAPIUserName','PortalStatAPIPassword','PortalStatAPIUrl'],
-              propertiesType: 'app'
+              propertiesType: 'app',
+              refresh: true
             }
             var wantedData = angular.toJson(requestData);
             xssSetupEngine.getProperties().save(wantedData, function(data){

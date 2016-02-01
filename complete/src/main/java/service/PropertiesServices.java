@@ -85,12 +85,19 @@ public class PropertiesServices {
     private void updateSingleProperties(String key, String value, List fileLines){
         for(int i = 0; i < fileLines.size(); i++){
 
-            if(((String)(fileLines.get(i))).contains(key)&&
+            if(((String)(fileLines.get(i))).contains(key)&&confirmTheRightKey(key, (String)fileLines.get(i))&&
                     (((String)fileLines.get(i)).contains("="))&&
                     (!(((String) fileLines.get(i)).startsWith("#")))){
                 fileLines.set(i, key+"="+value);
             }
         }
+    }
+    private boolean confirmTheRightKey(String key, String line){
+        String[] temp = line.split("=");
+        if(temp.length==2&&key.length()==temp[0].length()){
+            return true;
+        }
+        return false;
     }
 
     public Map<String,String> writeProperties(Map<String, Object> requestData) {

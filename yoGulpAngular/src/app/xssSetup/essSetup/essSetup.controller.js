@@ -38,6 +38,10 @@
       essHRConnectionService.essHRConnectionTestClick(vm);
     }
 
+    vm.saveHRPropertiesClick = function(){
+      essHRConnectionSetup.essHRSavePropertiesClick(vm);
+    }
+
 
 
 
@@ -65,55 +69,22 @@
 
   }
 
-  function EssCognosSetupController($log,$http,xssSetupEngine, FilePath,toastr){
+  function EssCognosSetupController(essCognosSetupService){
     var vm = this;
 
     vm.simpleMessage = "This is ESS Cognos Setup Page!";
 
-    var requestData = {
-      filePath : FilePath.essApp,
-      keys : [
-        'ReportServerType','CognosReportServerName','CognosReportServerPort','CognosAnonymousAccessAllowed',
-        'CognosDefaultUserAllowed', 'CognosDefaultUserName', 'CognosDefaultUserPassword', 'CognosDefaultUserNamespace',
-        'CognosPrimaryWaitThreshold', 'CognosSecondaryWaitThreshold', 'CognosReportPathCheckStub', 'CognosBillDateParmName',
-        'CognosBillTimeParmName', 'CognosBillFromSeqParmName', 'CognosBillToSeqParmName', 'CognosAccountNoParmName',
-        'CognosReportPriority', 'CognosDsName', 'CognosDsConn', 'CognosDsUser', 'CognosDsPwd', 'CognosSyuser',
-        'CognosW2ReportPath', 'CognosBenefitReportPath'
-      ],
-      propertiesType: 'app',
-      refresh: true
+    essCognosSetupService.essCognosSetupInitalization(vm);
+
+    vm.testCognosReportClick = function(){
+      essCognosSetupService.testPayrollCognosClick(vm);
     }
-    var wantedKeys = angular.toJson(requestData);
-    xssSetupEngine.getProperties().save(wantedKeys, function(data){
-      $log.debug(data);
-      vm.ReportServerType = data.ReportServerType;
-      vm.CognosReportServerName = data.CognosReportServerName;
-      vm.CognosReportServerPort = data.CognosReportServerPort;
-      vm.CognosAnonymousAccessAllowed = data.CognosAnonymousAccessAllowed;
-      vm.CognosDefaultUserAllowed = data.CognosDefaultUserAllowed;
-      vm.CognosDefaultUserName = data.CognosDefaultUserName;
-      vm.CognosDefaultUserPassword = data.CognosDefaultUserPassword;
-      vm.CognosDefaultUserNamespace = data.CognosDefaultUserNamespace;
-      vm.CognosPrimaryWaitThreshold = data.CognosPrimaryWaitThreshold;
-      vm.CognosSecondaryWaitThreshold = data.CognosSecondaryWaitThreshold;
-      vm.CognosReportPathCheckStub = data.CognosReportPathCheckStub;
-      vm.CognosBillDateParmName = data.CognosBillDateParmName;
-      vm.CognosBillTimeParmName = data.CognosBillTimeParmName
-      vm.CognosBillFromSeqParmName = data.CognosBillFromSeqParmName;
-      vm.CognosBillToSeqParmName = data.CognosBillToSeqParmName;
-      vm.CognosAccountNoParmName = data.CognosAccountNoParmName;
-      vm.CognosReportPriority = data.CognosReportPriority;
-      vm.CognosDsName = data.CognosDsName;
-      vm.CognosDsConn = data.CognosDsConn;
-      vm.CognosDsUser = data.CognosDsUser;
-      vm.CognosDsPwd = data.CognosDsPwd;
-      vm.CognosSyuser = data.CognosSyuser;
-      vm.CognosW2ReportPath = data.CognosW2ReportPath;
-      vm.CognosBenefitReportPath = data.CognosBenefitReportPath;
-    },function(error){
-      $log.debug(error);
-      toastr.info("Backend API is broken!");
-    });
+
+    vm.essCognosSavePropertiesClick = function(){
+      essCognosSetupService.essCognosSavePropertiesClick(vm);
+    }
+
+
   }
 
   function EssSetupSummaryController(){
