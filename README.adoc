@@ -33,3 +33,8 @@ You'll open up another cmd.exe with aministrative priviledges, and cd into yoGol
 Your browser will immediately open up and point to localhost:3000
 
 
+== Final Thought
+Will use Launch4j to package everything into .exe
+
+
+
