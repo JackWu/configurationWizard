@@ -16,7 +16,7 @@ You'll open up a cmd.exe with administrative privileges, and cd into complete fo
 
     gradle bootrun
 
-and open your browser and oint to localhost:8080/greeting
+and open your browser and point to localhost:8080/greeting
 
     "Hello, World!"
 
