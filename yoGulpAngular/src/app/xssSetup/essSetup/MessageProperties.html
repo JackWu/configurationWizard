@@ -1,0 +1,55 @@
+<div class="container">
+  <div>
+    <acme-navbar creation-date="main.creationDate"></acme-navbar>
+  </div>
+
+  <div class="jumbotron">
+    <h1>Message Properties</h1>
+      <h2>Login Pages</h2>
+      <div class="form-group">
+            <label class="pull-left">Password Incorrect Message:</label>
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssMessageProperties.LoginPasswordIncorrect">
+      </div>
+      <div class="form-group">
+            <label class="pull-left">Password Expired Message:</label>
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssMessageProperties.LoginPasswordExpired">
+      </div>
+      <div class="form-group">
+            <label class="pull-left">Employee Terminated Message:</label>
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssMessageProperties.LoginEmpTerminated">
+      </div>
+      <h2>Password Maintenance</h2>
+      <div class="form-group">
+            <label class="pull-left">Old Password Mismatch:</label>
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssMessageProperties.PasswordMaintenanceOldPasswordMisMatch">
+      </div>
+      <h2>Forgot Password Page</h2>
+      <div class="form-group">
+            <label class="pull-left">Information Validation Error Message:</label>
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssMessageProperties.ForgotPasswordValidationInformationError">
+      </div>
+      <div class="form-group">
+            <label class="pull-left">User Information Error:</label>
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssMessageProperties.ForgotPasswordUserInformationError">
+      </div>
+      <div class="form-group">
+            <label class="pull-left">Cannot be Empty Message:</label>
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssMessageProperties.ForgotPasswordNonEmpty">
+      </div>
+      <div class="form-group">
+            <label class="pull-left">Employee no Match Message:</label>
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssMessageProperties.ForgotPasswordEmployeNoMatch">
+      </div>
+      <h2>Generic Error message</h2>
+      <div class="form-group">
+            <label class="pull-left">General Error Message:</label>
+            <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssMessageProperties.GeneralErrorMessage">
+      </div>
+
+      <div class="form-group">
+          <button class="btn btn-default" ng-click="EssMessageProperties.essMessageSavePropertiesClick()">Save</button>
+      </div>
+
+  </div>
+
+</div>

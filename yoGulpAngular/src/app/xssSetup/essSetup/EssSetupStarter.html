@@ -7,7 +7,7 @@
     <span ng-bind="EssSetupStarter.simpleMessage"></span>
     <div class="form-group">
           <label class="pull-left">ESS Application Properties Path</label>
-          <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssSetupStarter.essApp" value="{{EssSetupStarter.essApp}}">
+          <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" id="fileUpload" ng-model="EssSetupStarter.essApp">
     </div>
     <div class="form-group">
         <button class="btn btn-default" ng-click="EssSetupStarter.updateEssAppPath()">Update</button>
@@ -21,6 +21,8 @@
     <div class="row"><div class="col-md-3 col-md-offset-4"><a ui-sref="essCognosSetup">ESS Cognos Setup</a></div></div>
     <div class="row"><div class="col-md-3 col-md-offset-4"><a ui-sref="essMiscSetup">ESS Misc Setup</a></div></div>
     <div class="row"><div class="col-md-3 col-md-offset-4"><a ui-sref="essPortalStatSetup">ESS Portal Stat Check</a></div></div>
+    <div class="row"><div class="col-md-3 col-md-offset-4"><a ui-sref="essTimeEntrySetup">ESS Time Entry Setup</a></div></div>
+    <div class="row"><div class="col-md-3 col-md-offset-4"><a ui-sref="essMessageProperties">ESS Message Properties</a></div></div>
   </div>
 
 </div>

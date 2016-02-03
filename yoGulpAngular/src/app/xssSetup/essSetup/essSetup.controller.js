@@ -10,26 +10,26 @@
     .controller('EssSetupSummaryController', EssSetupSummaryController)
     .controller('EssMiscSetupController', EssMiscSetupController)
     .controller('EssPortalStatSetupController', EssPortalStatSetupController)
-    .controller('EssTimeEntrySetupController', EssTimeEntrySetupController);
+    .controller('EssTimeEntrySetupController', EssTimeEntrySetupController)
+    .controller('EssMessagePropertiesController', EssMessagePropertiesController);
 
 
   /** @ngInject */
-  function EssSetupStarterController(xssSetupEngine,$log, FilePath, toastr) {
+  function EssSetupStarterController(xssSetupEngine,$log, FilePath, toastr, globalVariable) {
     var vm = this;
 
     //vm.simpleMessage = "This is ESS Setup Starter Page!";
 
-    vm.app = FilePath.app;
-    vm.dataaccess = FilePath.dataaccess;
-    vm.essApp = FilePath.essApp;
+    vm.essApp = globalVariable.getESSPath();
 
     xssSetupEngine.testRequest().get(function(data){
       $log.debug(data);
     });
 
     vm.updateEssAppPath = function(){
-      FilePath.essApp = vm.essApp;
+      globalVariable.setESSPath(vm.essApp);
       toastr.success("Updated ESS Application Properties.");
+      $log.debug(globalVariable.getESSPath());
     }
 
   }
@@ -46,7 +46,7 @@
     }
 
     vm.saveHRPropertiesClick = function(){
-      essHRConnectionSetup.essHRSavePropertiesClick(vm);
+      essHRConnectionService.essHRSavePropertiesClick(vm);
     }
 
 
@@ -92,8 +92,10 @@
 
   }
 
-  function EssSetupSummaryController(){
+  function EssSetupSummaryController(globalVariable, $log){
     var vm = this;
+
+    $log.debug(globalVariable.getESSPath());
 
   }
 
@@ -118,5 +120,14 @@
     var vm = this;
   }
 
+  function EssMessagePropertiesController(essMessagePropertiesService){
+    var vm = this;
+    essMessagePropertiesService.essMessagePropertiesInitalization(vm);
+
+    vm.essMessageSavePropertiesClick = function(){
+      essMessagePropertiesService.essMessageSavePropertiesClick(vm);
+    }
+
+  }
 
 })();

@@ -25,6 +25,12 @@
         'url': '',
         'description': 'Configuring Vendor Self Service',
         'logo': 'gulp.png'
+      },
+      {
+        'title':'Online Application',
+        'url':'',
+        'description':'Configuring Online Application. Online Application is used for job searching and application.',
+        'logo': 'karma.png'
       }
     ];
 

@@ -61,6 +61,12 @@
         templateUrl: 'app/xssSetup/essSetup/TimeEntrySetup.html',
         controller: 'EssTimeEntrySetupController',
         controllerAs: 'EssTimeEntrySetup'
+      })
+      .state('essMessageProperties',{
+        url:'/essMessageProperties',
+        templateUrl:'app/xssSetup/essSetup/MessageProperties.html',
+        controller:'EssMessagePropertiesController',
+        controllerAs:'EssMessageProperties'
       });
 
     $urlRouterProvider.otherwise('/');
