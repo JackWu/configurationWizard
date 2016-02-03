@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="cayenta">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/lib/cayenta" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/lib/cayenta" recursive="false" />
+  </library>
+</component>

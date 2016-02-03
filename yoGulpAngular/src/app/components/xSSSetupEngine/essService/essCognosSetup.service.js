@@ -72,7 +72,7 @@
           var dsUser = 'dsUser=' + vm.CognosDsUser;
           var dsPwd = 'dsPwd=' + vm.CognosDsPwd;
           var syuser = 'syuser=' + vm.CognosSyuser;
-          var p_rptOutbase = 'p_rptOutBase=reprots';
+          //var p_rptOutbase = 'p_rptOutBase=reprots';
           var p_rptOutPath = 'p_rptOutPath=';
           var rptPath = 'rptPath='+vm.CognosReportPathCheckStub;
           var p_check_no = 'p_Check_No=071977' //'p_Check_No='+vm.p_Check_no

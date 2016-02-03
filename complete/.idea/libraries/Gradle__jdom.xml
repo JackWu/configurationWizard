@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: jdom">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/cayenta/jdom.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

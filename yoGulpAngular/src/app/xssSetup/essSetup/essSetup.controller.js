@@ -93,14 +93,14 @@
   }
 
   function EssSetupSummaryController(globalVariable, $log){
-    var vm = this;
+    //var vm = this;
 
     $log.debug(globalVariable.getESSPath());
 
   }
 
   function EssMiscSetupController(){
-    var vm = this;
+    //var vm = this;
 
   }
 
@@ -117,7 +117,7 @@
   }
 
   function EssTimeEntrySetupController(){
-    var vm = this;
+    //var vm = this;
   }
 
   function EssMessagePropertiesController(essMessagePropertiesService){

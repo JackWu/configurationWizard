@@ -1,0 +1,14 @@
+Library Name: cayenta-lib-1.0.1.jar
+Description: cayenta internal library, mainly for parsing api reply
+
+Library Name: ojdc14.jar
+Description: cayenta oracle database connection driver
+
+Library Name: jdom.jar
+Description: parsing XML documents
+
+Library Name: icclient.jar
+Description: Invoice Cloud Library
+
+Library Name: mail-1.4.jar
+Description: mail Library

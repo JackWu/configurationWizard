@@ -28,6 +28,11 @@ public class GreetingController {
         model.addAttribute("name", name);
         return "greeting";
     }
+    @RequestMapping("/")
+    public String entry() {
+
+        return "index";
+    }
 
     @RequestMapping(value="/test/request")
     public

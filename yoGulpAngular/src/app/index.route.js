@@ -26,17 +26,17 @@
         controller: 'EssSetupSummaryController',
         controllerAs: 'EssSetupSummary'
       })
-      .state('essHRConnectionSetup', {
-        url:'/essHRConnectionSetup',
-        templateUrl: 'app/xssSetup/essSetup/HRConnectionSetup.html',
-        controller: 'EssHRConnectionSetupController',
-        controllerAs: 'EssHRConnectionSetup'
-      })
       .state('essCUConnectionSetup', {
         url:'/essCUConnectionSetup',
         templateUrl: 'app/xssSetup/essSetup/CUConnectionSetup.html',
         controller: 'EssCUConnectionSetupController',
         controllerAs: 'EssCUConnectionSetup'
+      })
+      .state('essHRConnectionSetup', {
+        url:'/essHRConnectionSetup',
+        templateUrl: 'app/xssSetup/essSetup/HRConnectionSetup.html',
+        controller: 'EssHRConnectionSetupController',
+        controllerAs: 'EssHRConnectionSetup'
       })
       .state('essCognosSetup', {
         url:'/essCognosSetup',
