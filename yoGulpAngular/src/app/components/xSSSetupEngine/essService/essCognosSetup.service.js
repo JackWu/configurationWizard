@@ -56,7 +56,7 @@
             vm.CognosBenefitReportPath = data.CognosBenefitReportPath;
           },function(error){
             $log.debug(error);
-            toastr.info("Backend API is broken!");
+            toastr.error("Backend API is broken!");
           });
         }
 
@@ -121,11 +121,11 @@
             var saveRequestData = angular.toJson(requestData);
             xssSetupEngine.saveProperties().save(saveRequestData, function(data){
               $log.debug(data);
-              toastr.info(data.message, data.status);
+              toastr.success(data.message, data.status);
               usSpinnerService.stop('spinner-1');
             },function(error){
               $log.debug(error);
-              toastr.info(error.message, error.status);
+              toastr.error(error.message, error.status);
               usSpinnerService.stop('spinner-1');
             });
         }

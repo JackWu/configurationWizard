@@ -39,7 +39,7 @@
             vm.GeneralErrorMessage = data['message.general.error'];
           },function(error){
             $log.debug(error);
-            toastr.info("Backend API is broken!");
+            toastr.error("Backend API is broken!");
           });
         }
 
@@ -70,7 +70,7 @@
               usSpinnerService.stop('spinner-1');
             },function(error){
               $log.debug(error);
-              toastr.info(error.message, error.status);
+              toastr.error(error.message, error.status);
               usSpinnerService.stop('spinner-1');
             });
         }

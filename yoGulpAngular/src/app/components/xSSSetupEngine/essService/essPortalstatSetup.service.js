@@ -22,7 +22,7 @@
               }, function(error){
                 $log.debug(error);
                 usSpinnerService.stop('spinner-1');
-                toastr.info("Backend API is broken!");
+                toastr.error("Backend API is broken!");
               });
             }
         }

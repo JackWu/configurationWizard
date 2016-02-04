@@ -8,16 +8,22 @@
           <element id="module-output" name="Configurationer" />
         </element>
         <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: cayenta-lib-1.0.1" />
+          <element id="library" level="project" name="Gradle: icclient" />
+          <element id="library" level="project" name="Gradle: jdom" />
+          <element id="library" level="project" name="Gradle: mail-1.4" />
+          <element id="library" level="project" name="Gradle: ojdbc14" />
           <element id="library" level="project" name="Gradle: spring-boot-starter-web-1.3.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: commons-io-1.3.2" />
           <element id="library" level="project" name="Gradle: spring-boot-starter-1.3.2.RELEASE" />
           <element id="library" level="project" name="Gradle: spring-boot-starter-validation-1.3.2.RELEASE" />
           <element id="library" level="project" name="Gradle: jackson-databind-2.6.5" />
           <element id="library" level="project" name="Gradle: spring-web-4.2.4.RELEASE" />
           <element id="library" level="project" name="Gradle: spring-webmvc-4.2.4.RELEASE" />
-          <element id="library" level="project" name="Gradle: spring-core-4.2.4.RELEASE" />
           <element id="library" level="project" name="Gradle: spring-boot-1.3.2.RELEASE" />
           <element id="library" level="project" name="Gradle: spring-boot-autoconfigure-1.3.2.RELEASE" />
           <element id="library" level="project" name="Gradle: spring-boot-starter-logging-1.3.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: spring-core-4.2.4.RELEASE" />
           <element id="library" level="project" name="Gradle: snakeyaml-1.16" />
           <element id="library" level="project" name="Gradle: hibernate-validator-5.2.2.Final" />
           <element id="library" level="project" name="Gradle: jackson-annotations-2.6.5" />
@@ -36,7 +42,7 @@
           <element id="library" level="project" name="Gradle: aopalliance-1.0" />
           <element id="library" level="project" name="Gradle: logback-core-1.1.3" />
           <element id="library" level="project" name="Gradle: slf4j-api-1.7.13" />
-          <element id="library" level="project" name="cayenta" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-io/1.3.2/b6dde38349ba9bb5e6ea6320531eae969985dae5/commons-io-1.3.2.jar" />
         </element>
       </element>
       <element id="directory" name="META-INF">

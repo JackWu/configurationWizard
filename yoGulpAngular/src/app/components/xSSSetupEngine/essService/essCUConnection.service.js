@@ -51,7 +51,7 @@
                 vm.result = data;
                 usSpinnerService.stop('spinner-1');
               }, function(error){
-                toastr.info("Backend API is broken!");
+                toastr.error("Backend API is broken!");
                 $log.debug(error);
                 usSpinnerService.stop('spinner-1');
               })
@@ -77,7 +77,7 @@
                 usSpinnerService.stop('spinner-1');
               },function(error){
                 $log.debug(error);
-                toastr.info(error.message, error.status);
+                toastr.error(error.message, error.status);
                 usSpinnerService.stop('spinner-1');
               });
           }

@@ -1,11 +1,10 @@
 <div class="container">
-  <div>
-    <acme-navbar creation-date="main.creationDate"></acme-navbar>
-  </div>
 
-  <div>
-    <span ng-bind="EssMiscSetup.simpleMessage"></span>
-    Include PAOnly, passCode=ee123,logo, footer text
+  <div class="jumbotron">
+    <h1>Ess Misc Setup</h1>
+    <div class="form-group">
+          <label class="pull-left">Cognos AnonymousAccessAllowed:</label>
+          <input type="text" class="form-control ng-pristine ng-valid ng-valid-required ng-touched" ng-model="EssCognosSetup.CognosAnonymousAccessAllowed">
+    </div>
   </div>
-
 </div>

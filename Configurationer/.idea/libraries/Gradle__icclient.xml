@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: icclient">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/cayenta/icclient.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
