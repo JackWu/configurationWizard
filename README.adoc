@@ -12,7 +12,7 @@ You'll need to install the following tools and set their path into your system P
 
 == First Step (Back end service)
 
-You'll open up a cmd.exe with administrative privileges, and cd into complete folder
+You'll open up a cmd.exe with administrative privileges, and cd into complete folder (Not the Configurationner Folder!)
 
     gradle bootrun
 
